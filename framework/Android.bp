@@ -1,6 +1,6 @@
 java_library {
     name: "faceunlock_framework",
-    installable: true,
+    installable: false,
 
     srcs: [
         "src/**/*.java",

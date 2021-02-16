@@ -1,63 +1,59 @@
 cc_prebuilt_library_shared {
-    name: "libarcsoft_faceid",
+    name: "libFaceDetectCA",
     strip: {
         none: true,
     },
     target: {
         android_arm64: {
-            srcs: ["lib64/libarcsoft_faceid.so"],
+            srcs: ["lib64/libFaceDetectCA.so"],
         },
     },
     compile_multilib: "64",
     prefer: true,
-    product_specific: true,
     check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
-    name: "libarcsoft-lib",
+    name: "libmegface",
     strip: {
         none: true,
     },
     target: {
         android_arm64: {
-            srcs: ["lib64/libarcsoft-lib.so"],
+            srcs: ["lib64/libmegface.so"],
         },
     },
     compile_multilib: "64",
     prefer: true,
-    product_specific: true,
     check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
-    name: "libarcsoftbase",
+    name: "libMegviiUnlock",
     strip: {
         none: true,
     },
     target: {
         android_arm64: {
-            srcs: ["lib64/libarcsoftbase.so"],
+            srcs: ["lib64/libMegviiUnlock.so"],
         },
     },
     compile_multilib: "64",
     prefer: true,
-    product_specific: true,
     check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
-    name: "libmpbase",
+    name: "libMegviiUnlock-jni-1.2",
     strip: {
         none: true,
     },
     target: {
         android_arm64: {
-            srcs: ["lib64/libmpbase.so"],
+            srcs: ["lib64/libMegviiUnlock-jni-1.2.so"],
         },
     },
     compile_multilib: "64",
     prefer: true,
-    product_specific: true,
     check_elf_files: false,
 }
