@@ -57,3 +57,67 @@ cc_prebuilt_library_shared {
     prefer: true,
     check_elf_files: false,
 }
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_faceid",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["lib64/libarcsoft_faceid.so"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft-lib",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["lib64/libarcsoft-lib.so"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoftbase",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["lib64/libarcsoftbase.so"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmpbase",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["lib64/libmpbase.so"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+    check_elf_files: false,
+}
