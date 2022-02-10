@@ -1,0 +1,8 @@
+android_library {
+    name: "faceunlock_vendor_framework",
+    srcs: [
+        "java/**/*.java"
+    ],
+    resource_dirs: ["res"],
+    manifest: "AndroidManifest.xml",
+}

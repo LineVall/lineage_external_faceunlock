@@ -1,0 +1,127 @@
+cc_prebuilt_library_shared {
+    name: "libFaceDetectCA",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["prebuilt/libs/arm64-v8a/libFaceDetectCA.so"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmegface",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["prebuilt/libs/arm64-v8a/libmegface.so"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMegviiUnlock",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["prebuilt/libs/arm64-v8a/libMegviiUnlock.so"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMegviiUnlock-jni-1.2",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["prebuilt/libs/arm64-v8a/libMegviiUnlock-jni-1.2.so"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_faceid",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["prebuilt/libs/arm64-v8a/libarcsoft_faceid.so"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft-lib",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["prebuilt/libs/arm64-v8a/libarcsoft-lib.so"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoftbase",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["prebuilt/libs/arm64-v8a/libarcsoftbase.so"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmpbase",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["prebuilt/libs/arm64-v8a/libmpbase.so"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+    check_elf_files: false,
+}

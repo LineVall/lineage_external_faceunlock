@@ -1,5 +1,5 @@
 cc_library {
-    name: "faceunlock_dependencies",
+    name: "faceunlock_vendor_dependencies",
     srcs: [
         "faceunlock_dependencies_dummy.cpp",
     ],
