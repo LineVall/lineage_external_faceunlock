@@ -1,5 +1,5 @@
 /*
-* Copyright (C) 2020 The Pixel Experience Project
+* Copyright (C) 2022 The Pixel Experience Project
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -15,10 +15,23 @@
 */
 package com.android.internal.util.custom.faceunlock;
 
+import android.content.ComponentName;
+import android.content.Intent;
 import android.os.SystemProperties;
 
 public class FaceUnlockUtils {
     public static boolean isFaceUnlockSupported() {
         return SystemProperties.getBoolean("ro.face_unlock_service.enabled", false);
+    }
+
+    public static Intent getServiceIntent() {
+        Intent intent = new Intent("org.pixelexperience.faceunlock.BIND");
+        intent.setComponent(ComponentName.unflattenFromString(
+                "org.pixelexperience.faceunlock/org.pixelexperience.faceunlock.service.FaceAuthService"));
+        return intent;
+    }
+
+    public static String getServicePackageName() {
+        return "org.pixelexperience.faceunlock";
     }
 }
