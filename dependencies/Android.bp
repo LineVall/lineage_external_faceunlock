@@ -9,7 +9,7 @@ cc_library {
         "-Werror",
         "-Wno-unused-parameter",
     ],
-    compile_multilib: "64",
+    compile_multilib: "first",
     required: [
         "libFaceDetectCA",
         "libmegface",
