@@ -17,7 +17,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmegface",
+    name: "libmegface-faceunlock",
     strip: {
         none: true,
     },
@@ -125,7 +125,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmpbase",
+    name: "libmpbase-faceunlock",
     strip: {
         none: true,
     },

@@ -12,12 +12,12 @@ cc_library {
     compile_multilib: "first",
     required: [
         "libFaceDetectCA",
-        "libmegface",
+        "libmegface-faceunlock",
         "libMegviiUnlock",
         "libMegviiUnlock-jni-1.2",
         "libarcsoft_faceid",
         "libarcsoft-lib",
         "libarcsoftbase",
-        "libmpbase",
+        "libmpbase-faceunlock",
     ],
 }
